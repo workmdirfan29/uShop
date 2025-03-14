@@ -104,6 +104,7 @@ nav{
 }
 .left-content{
     width: 40vw;
+
 }
 .left-content h1{
     color: #fff;
@@ -133,10 +134,12 @@ button{
     outline: none;
     border-radius: 5px;
 }
+
 button:hover{
     scale: 1.1;
     transition: 200ms ease-in;
 }
+
 button a{
     text-decoration: none;
     color: #fff;
@@ -151,6 +154,11 @@ button a{
 }
 
 @media (max-width: 768px){
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: #201F1F;
+    }
     .menu-bar ul{
         display: none;
     }
@@ -159,7 +167,7 @@ button a{
     }
     .left-content{
         width: 40vw;
-        margin-bottom: 7vh;
+        margin-bottom: 2vh;
     }
     .right-content img{
         height: 300px;
@@ -185,17 +193,23 @@ button a{
         font-size: 1.5rem;
         padding: 1vh 7vw;
     }
-    
+    button a{
+        font-size: 1.3rem;
+    }
 }
 @media (max-width: 1024px){
-  
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: #201F1F;
+    }
     .content{
        text-align: center;
-        flex-direction: column-reverse;
+       flex-direction: column-reverse;
     }
     .left-content{
         width: 80vw;
-        margin-bottom: 7vh;
+        margin-bottom: 2vh;
     }
     .right-content img{
         height: 450px;
@@ -204,8 +218,10 @@ button a{
         padding: 5px;
     } 
     button{
-        font-size: 1.5rem;
-        padding: 1vh 5vw;
+        padding: 1vh 2vw;
+    }
+    button a{
+        font-size: 1.2rem;
     }
 }
 @media (max-width: 504px){
@@ -214,8 +230,36 @@ button a{
         width:  350px;
         margin-bottom: 3vh;
     } 
+   
     button{
        margin-top: 1.5vh;
+    }
+
+}
+@media (max-width: 404px){
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: #201F1F;
+    }
+    .right-content img{
+        height: 350px;
+        width:  350px;
+        margin-bottom: 3vh;
+    } 
+    .left-content{
+        width: 80vw;
+        margin-bottom: 2vh;
+    }
+   
+    .left-content p{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+   
+    button{
+       padding: 1vh 3vw;
+       margin-top: 1vh;
     }
 
 }
