@@ -153,6 +153,11 @@ button a{
     background-size: cover;
     object-fit: cover;
 }
+.polo{
+    width: 100%;
+    height: 100vh;
+}
+
 
 @media (max-width: 768px){
     .container{
