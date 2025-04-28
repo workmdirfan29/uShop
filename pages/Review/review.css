@@ -97,7 +97,7 @@ nav {
     transition: 100ms ease-in-out;
 }
 .review-section {
-    background-color: #201F1F;
+    /* background-color: #201F1F; */
     padding: 60px 20px;
     text-align: center;
     color: #fff;
@@ -134,18 +134,22 @@ nav {
 
 /* === FOOTER SECTION === */
 footer {
-    background-color: #201F1F;
     color: #fff;
     padding: 50px 20px 30px;
+    /* background-color: #201F1F;  */
+    border: 1px solid #fff;
 }
 
 .footer-container {
+    border-radius: 10px 10px  0 0 ;
+    background-color: #201F1F;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1100px;
+    justify-content: space-evenly;
+    width: 100%;
     margin: 0 auto;
 }
+
 
 .footer-about,
 .footer-links,
@@ -159,12 +163,13 @@ footer {
 .footer-contact h4 {
     color: #5542FD;
     margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .footer-about p,
 .footer-contact p {
     color: #ccc;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.6;
 }
 
@@ -185,12 +190,14 @@ footer {
 
 .footer-links ul li a:hover {
     color: #5542FD;
+    text-decoration: underline;
     transition: 0.2s;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
-    color: #aaa;
-    font-size: 14px;
+    margin-top: 25px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
 }
