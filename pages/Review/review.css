@@ -72,7 +72,10 @@ nav {
     font-weight: 800;
     transition: 200ms smooth;
 }
-
+.btn1 .btn2, a{
+    text-decoration: none;
+    color: #fff;
+}
 .btn1:hover {
     background-color: #5542FD; 
     color: #fff;
