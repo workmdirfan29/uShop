@@ -2,205 +2,246 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", serif;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    background-color: #201F1F; 
-}
-
-nav {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  nav {
     height: 9vh;
-    background-color: #201f1f; 
+    background-color: #201f1f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 28px;
     font-weight: 700;
     cursor: pointer;
-}
-
-.logo a {
+  }
+  
+  .logo a {
     text-decoration: none;
     color: #fff;
-}
-
-.menu-bar ul {
+  }
+  
+  .menu-bar ul {
     display: flex;
     gap: 35px;
     list-style: none;
-}
-
-.menu-bar ul li a {
+  }
+  
+  .menu-bar ul li a {
     font-size: 20px;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-}
-
-.menu-bar ul li a:hover {
-    color: #5542FD; /* Accent color for hover */
+  }
+  
+  .menu-bar ul li a:hover,
+  .menu-bar ul li a:focus {
+    color: #5542fd;
     transition: 0.2s ease-in-out;
-}
-
-.menu-bar ul li a:focus {
-    color: #5542FD;  /* Accent color for focus */
-}
-
-.menu-btn {
+  }
+  
+  .menu-btn {
     display: flex;
     gap: 10px;
-}
-
-.menu-btn button {
+  }
+  
+  .menu-btn button {
     padding: 8px 18px;
     font-size: 16px;
     cursor: pointer;
-}
-
-.btn1 {
+  }
+  
+  .btn1 {
     border: none;
     outline: none;
     background-color: transparent;
     color: #fff;
     font-weight: 800;
-    transition: 200ms smooth;
-}
-.btn1 .btn2, a{
+  }
+  
+  .btn1 a,
+  .btn2 a {
     text-decoration: none;
     color: #fff;
-}
-.btn1:hover {
-    background-color: #5542FD; 
-    color: #fff;
+  }
+  
+  .btn1:hover {
+    background-color: #5542fd;
     border-radius: 8px;
-    border: none;
-    outline: none;
-    font-weight: 700;
     transition: 300ms ease-in-out;
-}
-
-.btn2 {
-    background-color: #5542FD;
+  }
+  
+  .btn2 {
+    background-color: #5542fd;
     color: #fff;
     border-radius: 8px;
-    border: none;
-    outline: none;
     font-weight: 700;
-}
-
-.btn2:hover {
+    border: none;
+  }
+  
+  .btn2:hover {
     scale: 1.1;
     transition: 100ms ease-in-out;
-}
-.review-section {
-    /* background-color: #201F1F; */
+  }
+  
+  /* === REVIEW SECTION === */
+  .review-section {
     padding: 60px 20px;
     text-align: center;
     color: #fff;
-}
-
-.review-section h1 {
+  }
+  
+  .review-section h1 {
     font-size: 36px;
-    color: #5542FD;
+    color: #5542fd;
     margin-bottom: 40px;
-}
-
-.review {
+  }
+  
+  .review {
     background-color: #2d2c2c;
     max-width: 700px;
     margin: 20px auto;
     padding: 25px;
-    border-left: 6px solid #5542FD;
+    border-left: 6px solid #5542fd;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
-}
-
-.review h3 {
+  }
+  
+  .review h3 {
     font-size: 20px;
-    color: #fff;
     margin-bottom: 10px;
-}
-
-.review p {
+  }
+  
+  .review p {
     font-size: 16px;
     color: #ccc;
     line-height: 1.6;
-}
-
-/* === FOOTER SECTION === */
-footer {
+  }
+  
+  .stars {
+    color: #FFD700;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  /* === SUBMIT REVIEW === */
+  .submit-review {
+    background-color: #2d2c2c;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .submit-review h2 {
+    color: #5542fd;
+    margin-bottom: 20px;
+  }
+  
+  .submit-review input,
+  .submit-review textarea,
+  .submit-review select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-review button {
+    background-color: #5542fd;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .submit-review button:hover {
+    background-color: #6a57f5;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .confirmation {
+    color: #00ff99;
+    margin-top: 10px;
+    font-weight: bold;
+    display: none;
+  }
+  
+  /* === FOOTER SECTION === */
+  footer {
     color: #fff;
     padding: 50px 20px 30px;
-    /* background-color: #201F1F;  */
     border: 1px solid #fff;
-}
-
-.footer-container {
-    border-radius: 10px 10px  0 0 ;
-    background-color: #201F1F;
+  }
+  
+  .footer-container {
+    background-color: #201f1f;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    border-radius: 10px 10px 0 0;
     margin: 0 auto;
-}
-
-
-.footer-about,
-.footer-links,
-.footer-contact {
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
     flex: 1 1 250px;
     margin: 20px;
-}
-
-.footer-about h3,
-.footer-links h4,
-.footer-contact h4 {
-    color: #5542FD;
+  }
+  
+  .footer-about h3,
+  .footer-links h4,
+  .footer-contact h4 {
+    color: #5542fd;
     margin-bottom: 15px;
     font-size: 1.5rem;
-}
-
-.footer-about p,
-.footer-contact p {
+  }
+  
+  .footer-about p,
+  .footer-contact p {
     color: #ccc;
     font-size: 19px;
     line-height: 1.6;
-}
-
-.footer-links ul {
+  }
+  
+  .footer-links ul {
     list-style: none;
     padding: 0;
-}
-
-.footer-links ul li {
+  }
+  
+  .footer-links ul li {
     margin-bottom: 10px;
-}
-
-.footer-links ul li a {
+  }
+  
+  .footer-links ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-}
-
-.footer-links ul li a:hover {
-    color: #5542FD;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #5542fd;
     text-decoration: underline;
     transition: 0.2s;
-}
-
-.footer-bottom {
+  }
+  
+  .footer-bottom {
     text-align: center;
     margin-top: 25px;
     color: #000;
     font-size: 18px;
     font-weight: 600;
-}
+  }
+  

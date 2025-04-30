@@ -1,67 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>review</title>
-    <link rel="stylesheet" href="./review.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review</title>
+  <link rel="stylesheet" href="./review.css"/>
 </head>
 <body>
-    <nav>
-        <div class="logo"><a href="./index.html">Shopee</a></div>
-        <div class="menu-bar">
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../why us/why us.html">Why Us</a></li>
-                <li><a href="../Review/review.html">Review</a></li>
-                <li><a href="../Shop/shop.html">Shop</a></li>
-            </ul>
-        </div>
-        <div class="menu-btn">
-            <button class="btn1"> <a href="../SignIn/signin.html">Sign In</a></button>
-            <button class="btn2"> <a href="../Register/register.html">Register</a></button>
-        </div>
-    </nav>
-    <main class="review-section">
-        <h1>Customer Reviews</h1>
-        <div class="review">
-            <h3>Jane Doe</h3>
-            <p>"Amazing shopping experience! Fast delivery and quality items."</p>
-        </div>
-        <div class="review">
-            <h3>Alex Green</h3>
-            <p>"Easy to navigate website and great customer support."</p>
-        </div>
-        <div class="review">
-            <h3>Maria Lin</h3>
-            <p>"Stylish products and the checkout process was a breeze!"</p>
-        </div>
-    </main>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="./index.html">Shopee</a></div>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../why us/why us.html">Why Us</a></li>
+        <li><a href="../Review/review.html">Review</a></li>
+        <li><a href="../Shop/shop.html">Shop</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn">
+      <button class="btn1"><a href="../SignIn/signin.html">Sign In</a></button>
+      <button class="btn2"><a href="../Register/register.html">Register</a></button>
+    </div>
+  </nav>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Shopee</h3>
-                <p>Your trusted online store for everything you love.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../Shop/shop.html">Shop</a></li>
-                    <li><a href="../why us/why us.html">Why Us</a></li>
-                    <li><a href="../Review/review.html">Review</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Email: support@shopee.com</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Shopee. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Review Section -->
+  <main class="review-section">
+    <h1>Customer Reviews</h1>
+
+    <div class="review">
+      <h3>Jane Doe</h3>
+      <div class="stars">★★★★★</div>
+      <p>"Amazing shopping experience! Fast delivery and quality items."</p>
+    </div>
+    <div class="review">
+      <h3>Alex Green</h3>
+      <div class="stars">★★★★☆</div>
+      <p>"Easy to navigate website and great customer support."</p>
+    </div>
+    <div class="review">
+      <h3>Maria Lin</h3>
+      <div class="stars">★★★★★</div>
+      <p>"Stylish products and the checkout process was a breeze!"</p>
+    </div>
+
+    <!-- Submit Review -->
+    <div class="submit-review">
+      <h2>Leave a Review</h2>
+      <form id="reviewForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <textarea name="message" placeholder="Your Review" rows="4" required></textarea>
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+        <button type="submit">Submit Review</button>
+      </form>
+      <p class="confirmation" id="confirmationMsg"></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Shopee</h3>
+        <p>Your trusted online store for everything you love.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../Shop/shop.html">Shop</a></li>
+          <li><a href="../why us/why us.html">Why Us</a></li>
+          <li><a href="../Review/review.html">Review</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@shopee.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shopee. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("reviewForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("confirmationMsg").innerText = "Thank you! Your review has been submitted.";
+      document.getElementById("confirmationMsg").style.display = "block";
+      this.reset();
+    });
+  </script>
 </body>
 </html>
