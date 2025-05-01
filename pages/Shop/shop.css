@@ -57,14 +57,16 @@ nav {
     display: flex;
     gap: 10px;
 }
-
+.menu-btn a{
+    text-decoration: none;
+    color: #fff;
+}
 .menu-btn button {
     padding: 8px 18px;
     font-size: 16px;
     cursor: pointer;
 }
-
-.btn1 {
+.btn1{
     border: none;
     outline: none;
     background-color: transparent;
@@ -72,27 +74,25 @@ nav {
     font-weight: 800;
     transition: 200ms smooth;
 }
-
-.btn1:hover {
-    background-color: #5542FD; /* Accent color for button hover */
+.btn1:hover{ 
+    background-color:#5542FD;
     color: #fff;
     border-radius: 8px;
     border: none;
     outline: none;
-    font-weight: 700;
+    font-weight: 700; 
     transition: 300ms ease-in-out;
 }
-
-.btn2 {
-    background-color: #5542FD; /* Accent color for the second button */
+.btn2{
+    background-color:#5542FD;
     color: #fff;
     border-radius: 8px;
     border: none;
     outline: none;
-    font-weight: 700;
-}
+    font-weight: 700;  
 
-.btn2:hover {
+}
+.btn2:hover{
     scale: 1.1;
     transition: 100ms ease-in-out;
 }
