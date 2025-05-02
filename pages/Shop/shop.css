@@ -96,11 +96,18 @@ nav {
     scale: 1.1;
     transition: 100ms ease-in-out;
 }
+.banner{
+  width: 100%;
+  padding: 1rem;
+}
+.banner img{
+  width: 100%;
+}
 .shop-container {
     margin: 2vh;
     padding: 40px 5vw;
     background-color: #1b1a1a;
-    border-radius: 8px;
+    border-radius: 34px;
     color: #fff;
   }
   
